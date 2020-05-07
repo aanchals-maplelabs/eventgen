@@ -152,6 +152,9 @@ else
 	@black $(NEWLY_ADDED_PY_FILES)
 endif
 
+format-check:
+	@black --check .
+
 lint-all:
 	@flake8 .
 

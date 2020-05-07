@@ -10,6 +10,11 @@ jobs:
     steps:
       - checkout
       - run:
+          name: Check Code Format
+          command: |
+            set -e
+            make format-check
+      - run:
           name: Run Tests
           command: |
             set -e
