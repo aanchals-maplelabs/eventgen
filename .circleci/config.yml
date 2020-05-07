@@ -10,12 +10,7 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Check Code Format
-          command: |
-            set -e
-            make format-check
-      - run:
-          name: Run Tests
+          name: Check Code Format And Run Tests
           command: |
             set -e
             make test
